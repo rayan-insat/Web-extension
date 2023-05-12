@@ -1,0 +1,98 @@
+/* Global styling to be herited*/
+* {
+    padding: 10px;
+    margin:0;
+    box-sizing: border-box;
+}
+  
+/* Styling for the popup */
+body {
+    min-width: 230px;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for the switch */
+.centereddiv {
+    padding-top:10px;
+}
+
+.desc {
+    font-size:12px;
+    font-weight:thin;
+    font-family: 'Outfit', Serif;
+}
+
+/* Styling of the inner centerddiv items*/
+.heading {
+    font-size:40px;
+    font-weight:bold;
+    font-family: 'Outfit', Serif;
+}
+
+#box {
+    padding-top:12px;
+    transform: scale(80%);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+} 
+
+.switch input {
+    display:none;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 42px;
+    width: 40px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #00917C;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #A5F0C5;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(52px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+  
+
+
+
+  
+

@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "NoPause",
+    "version": "1.0",
+    "description": "This web extension helps you focus by disabling the pause feature on the playing video",
+    "icons": {
+        "16":"/assets/icon-16.png",
+        "32":"/assets/icon-32.png",
+        "128": "/assets/icon-128.png"
+      },
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/assets/icon-16.png",
+            "32": "/assets/icon-32.png",
+            "128": "/assets/icon-128.png"
+          }
+      },
+    "permissions": [
+        "activeTab",
+        "runtime",
+        "storage",
+        "storage.sync"
+      ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      }
+  }
